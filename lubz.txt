@@ -36,22 +36,3 @@ lubz.online.	1	IN	AAAA	2606:50c0:8000::153 ; cf_tags=cf-proxied:true
 lubz.online.	1	IN	AAAA	2606:50c0:8001::153 ; cf_tags=cf-proxied:true
 lubz.online.	1	IN	AAAA	2606:50c0:8002::153 ; cf_tags=cf-proxied:true
 lubz.online.	1	IN	AAAA	2606:50c0:8003::153 ; cf_tags=cf-proxied:true
-
-;; MX Records
-lubz.online.	1	IN	MX	45 route3.mx.cloudflare.net.
-lubz.online.	1	IN	MX	4 route2.mx.cloudflare.net.
-lubz.online.	1	IN	MX	69 route1.mx.cloudflare.net.
-
-;; TXT Records
-cf2024-1._domainkey.lubz.online.	1	IN	TXT	"v=DKIM1; h=sha256; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiweykoi+o48IOGuP7GR3X0MOExCUDY/BCRHoWBnh3rChl7WhdyCxW3jgq1daEjPPqoi7sJvdg5hEQVsgVRQP4DcnQDVjGMbASQtrY4WmB1VebF+RPJB2ECPsEDTpeiI5ZyUAwJaVX7r6bznU67g7LvFq35yIo4sdlmtZGV+i0H4cpYH9+3JJ78k" "m4KXwaf9xUJCWF6nxeD+qG6Fyruw1Qlbds2r85U9dkNDVAS3gioCvELryh1TxKGiVTkg4wqHTyHfWsp7KD3WQHYJn0RyfJJu6YEmL77zonn7p2SRMvTMP3ZEXibnC9gz3nnhR6wcYL8Q7zXypKTMD58bTixDSJwIDAQAB"
-lubz.online.	1	IN	TXT	"v=spf1 include:_spf.mx.cloudflare.net ~all"
-
-Belangrijke wijzigingen zijn onder meer:
- * Alle exemplaren van lubz.nl zijn vervangen door lubz.online.
- * De SOA-record is bijgewerkt met de nieuwe domeinnaam.
- * De NS-records zijn bijgewerkt met de nieuwe domeinnaam.
- * De A-records zijn behouden.
- * De AAAA-records zijn behouden.
- * De MX-records zijn behouden.
- * De TXT-records zijn behouden.
- * De NS-records zijn bijgewerkt met de nieuwe naamservers lex.ns.cloudflare.com en rayne.ns.cloudflare.com.
